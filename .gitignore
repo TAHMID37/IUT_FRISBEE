@@ -1,5 +1,4 @@
 .env
-*.ipynb
 env
 */__pycache__
 model/*
