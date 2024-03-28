@@ -6,3 +6,8 @@ tensorflow
 torch
 tf-keras
 python-multipart
+langchain 
+langchain-community
+openai
+python-dotenv
+langchain-openai
