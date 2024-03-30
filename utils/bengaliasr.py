@@ -11,7 +11,7 @@ pipe = pipeline(
     model=MODEL,
     tokenizer=MODEL,
     chunk_length_s=CHUNK_LENGTH_S,
-    device=-1,  # Using CPU , Change it to 0 if you want to use GPU
+    device=0,  # Using CPU , Change it to 0 if you want to use GPU
     batch_size=BATCH_SIZE
 )
 pipe.model.config.forced_decoder_ids = pipe.tokenizer.get_decoder_prompt_ids(language="bn", task="transcribe")
