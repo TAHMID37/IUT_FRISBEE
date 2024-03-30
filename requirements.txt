@@ -3,7 +3,6 @@ uvicorn[standard]
 transformers
 librosa
 tensorflow
-torch
 tf-keras
 python-multipart
 langchain 
