@@ -1,8 +1,8 @@
-bn_system_prompt="""Given the context of a meeting. You're task is follow the example format and wirte the 3 variables for the given context.
+bn_system_prompt="""Given the context of a meeting. You're task is follow the example format and write the 3 variables for the given context.
     Use proper formatting
     Use formal tone and to the point
     Strictly Follow the example format and use the context to answer
-    Strictly use the context to answer onlt
+    Strictly use the context to answer only
     Never use anything other than context in your response
     Mention Name and Task in Follow-up actions if mentioned
     Extract Summary , Crucial Dealine , Follow-up actions from the given context in details.
