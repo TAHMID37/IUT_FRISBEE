@@ -25,7 +25,7 @@ app.add_middleware(
 
 
 # this endpoint takes Bengali audio file and converts it to Text
-@app.post("/upload/")
+@app.post("/upload_bangla/")
 async def upload_file(file: UploadFile = File(...)):
     try:
         os.makedirs("./data/audio", exist_ok=True)
@@ -55,7 +55,7 @@ async def upload_file(file: UploadFile = File(...)):
 
 
 # this endpoint takes Hindi audio file and converts it to Text
-@app.post("/upload_hi/")
+@app.post("/upload_hindi/")
 async def upload_file(file: UploadFile = File(...)):
     try:
         os.makedirs("./data/hindi", exist_ok=True)
