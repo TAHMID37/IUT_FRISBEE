@@ -18,6 +18,8 @@ Run these commands:
 `pip install -r requirements.txt`
 `uvicorn app.main:app`
 
+### FrontEnd
+
 You have to install node.js before starting the app
 
 To start frontend, go to the 'client/meeting_minute-app/' directory and run `npm i`. After installing dependencies run `npm start`.
