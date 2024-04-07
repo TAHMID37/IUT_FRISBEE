@@ -3,7 +3,7 @@ from transformers import pipeline
 
 MODEL = './model/bengali-whisper-medium'
 CHUNK_LENGTH_S = 20.1
-BATCH_SIZE = 4
+BATCH_SIZE = 2
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
