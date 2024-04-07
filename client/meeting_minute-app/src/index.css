@@ -114,3 +114,9 @@ code {
   width: 100%; /* Set the loader width to 100% of the container */
   max-width: 500px; /* Set maximum width to prevent it from becoming too wide */
 }
+
+.align-left {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}

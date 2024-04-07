@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 
 import { css } from "@emotion/react";
 import { BarLoader } from "react-spinners";
+import Markdown from "react-markdown";
 
 const AudioUploaderBangla = () => {
   const [file, setFile] = useState(null);
@@ -177,7 +178,6 @@ const AudioUploaderBangla = () => {
               </button>
             </div>
           </div>
-          
         </form>
         <br></br>
         <div class="row">
@@ -203,17 +203,24 @@ const AudioUploaderBangla = () => {
               {meetingMinutesResponse && (
                 <div>
                   <p>
-                    <strong>Summary:</strong>{" "}
-                    {getSummary(meetingMinutesResponse)}
+                    <div className="align-left">
+                      <strong>Summary:</strong>{" "}
+                      {getSummary(meetingMinutesResponse)}
+                    </div>
                   </p>
                   <p>
-                    <strong>Crucial Deadline:</strong>{" "}
-                    {getDeadline(meetingMinutesResponse)}
+                    <div className="align-left">
+                      <strong>Crucial Deadline:</strong>{" "}
+                      {getDeadline(meetingMinutesResponse)}
+                    </div>
                   </p>
-                  <p>
-                    <strong>Follow-up actions:</strong>{" "}
-                    {getFollowUpActions(meetingMinutesResponse)}
-                  </p>
+                  <div className="follow-up-actions align-left">
+                    <strong>Follow-up actions:</strong>
+                    <Markdown>
+                      {getFollowUpActions(meetingMinutesResponse)}
+                    </Markdown>{" "}
+                    {/* Render Markdown content */}
+                  </div>
                 </div>
               )}
             </div>
