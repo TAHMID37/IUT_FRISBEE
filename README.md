@@ -5,7 +5,7 @@ Clone repository
 
 Downlaod the model.zip file and extract it, copy the model folder in the project directory.
 [Team_IUT_FRISBEE_ONE_DRIVE](https://iutdhaka-my.sharepoint.com/:f:/g/personal/rafihassan_iut-dhaka_edu/EnaPmHUz0S9PidqCe60lp-EBFKEktdRZknUS70BmASLB4g?e=ysmI2f)
-
+Some samples of meeting audios in Bengali, Hindi, and English are also provided in the OneDrive link.
 
 
 Create a  .env file and fill it with same variables from env.txt and update the variables.
