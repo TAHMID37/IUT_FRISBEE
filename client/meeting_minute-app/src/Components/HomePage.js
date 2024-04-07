@@ -8,11 +8,11 @@ const HomePage = () => {
     <div>
       <Navbar />
       <div className="home-page-container">
-        <h1>Welcome to Meeting Minutes</h1> {/* Animated intro */}
-        <h1>Select Language</h1>
+        <h1>Welcome to Frisbee: Your Helpful Meeting Summarizer</h1> {/* Animated intro */}
+        <h3>Select Language To Summarize</h3>
         <div className="button-container">
           <Link to="/bangla" className="language-button">
-            Bengali
+            Bangla
           </Link>
           <Link to="/hindi" className="language-button">
             Hindi

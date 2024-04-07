@@ -1,7 +1,7 @@
 .home-page-container {
     text-align: center;
     margin-top: 100px; /* Adjust the margin as needed */
-    color: #FFFFFF; /* Font color for text on dark background */
+    color: #38597c; /* Font color for text on dark background */
   }
   
   .button-container {
@@ -11,22 +11,41 @@
     margin-top: 20px;
   }
   
-  .language-button {
+  /* .language-button {
     font-size: 35px;
-    padding: 15px 30px;
+    padding: 20px 30px;
     margin: 10px;
     font-size: 20px;
     border: none;
     border-radius: 5px;
-    background-color: #506675;
+    background-color: #6e9995;
+    color: #FFFFFF;     // Font color for text on dark background 
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  } 
+  */
+  
+  .language-button {
+    width: 200px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px; /* You may adjust padding if necessary */
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #56837e;
     color: #FFFFFF; /* Font color for text on dark background */
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
+}
+
   .language-button:hover {
-    background-color: #36454F; /* Change color on hover */
+    background-color: #d0d6da; /* Change color on hover */
   }
 
   

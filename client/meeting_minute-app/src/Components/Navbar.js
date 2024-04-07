@@ -4,7 +4,7 @@ import './Navbar.css'; // Import CSS file for custom styles
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#36454F' }}>
+    <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#4d637a' }}>
       <div className="container">
         <Link className="navbar-brand navbar-brand-hover" to="/">Meeting Minutes</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

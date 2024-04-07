@@ -15,7 +15,7 @@ code {
 
 /*just bg and body style*/
 .container{
-  background-color:#36454F;
+  background-color:#4d637a;
   padding-bottom:20px;
   margin-top:10px;
   border-radius:5px;
@@ -27,7 +27,7 @@ code {
   margin-top:20px;  
   }
   .btn-container{
-  background:#fff;
+  background:#D2E0FB;
   border-radius:5px;
   padding-bottom:20px;
   margin-bottom:20px;
@@ -47,11 +47,11 @@ code {
   color:#ff3f3f
   }
   .btn-primary{
-  border-color: #ff3f3f !important;
+  border-color: #cfcfcf !important;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ff3f3f !important;
-  border-color: #ff3f3f !important;
+  background-color: #3c6592 !important;
+  border-color: #3c6592 !important;
   }
   
   /*these two are set to not display at start*/
