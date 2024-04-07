@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 
 import { css } from "@emotion/react";
 import { BarLoader } from "react-spinners";
+import Markdown from "react-markdown";
 
 const AudioUploaderEnglish = () => {
   const [file, setFile] = useState(null);
@@ -34,7 +35,12 @@ const AudioUploaderEnglish = () => {
 
   const getFollowUpActions = (response) => {
     const startIndex = response.indexOf("Follow-up actions:");
-    return response.substring(startIndex + 18).trim();
+    const followUpActionsText = response.substring(startIndex + 18).trim();
+
+    // Replace newline characters with Markdown line breaks
+    const markdownText = followUpActionsText.replace(/\n/g, "  \n");
+
+    return markdownText;
   };
 
   const handleFileChange = (event) => {
@@ -204,19 +210,26 @@ const AudioUploaderEnglish = () => {
               {error && <p>Error: {error}</p>}
               {meetingMinutesResponse && (
                 <div>
-                  <p>
+                <p>
+                  <div className="align-left">
                     <strong>Summary:</strong>{" "}
                     {getSummary(meetingMinutesResponse)}
-                  </p>
-                  <p>
+                  </div>
+                </p>
+                <p>
+                  <div className="align-left">
                     <strong>Crucial Deadline:</strong>{" "}
                     {getDeadline(meetingMinutesResponse)}
-                  </p>
-                  <p>
-                    <strong>Follow-up actions:</strong>{" "}
+                  </div>
+                </p>
+                <div className="follow-up-actions align-left">
+                  <strong>Follow-up actions:</strong>
+                  <Markdown>
                     {getFollowUpActions(meetingMinutesResponse)}
-                  </p>
+                  </Markdown>{" "}
+                  {/* Render Markdown content */}
                 </div>
+              </div>
               )}
             </div>
           </div>

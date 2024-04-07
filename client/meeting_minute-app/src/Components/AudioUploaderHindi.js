@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 
 import { css } from "@emotion/react";
 import { BarLoader } from "react-spinners";
+import Markdown from "react-markdown";
 
 const AudioUploaderHindi = () => {
   const [file, setFile] = useState(null);
@@ -202,19 +203,26 @@ const AudioUploaderHindi = () => {
               {error && <p>Error: {error}</p>}
               {meetingMinutesResponse && (
                 <div>
-                  <p>
+                <p>
+                  <div className="align-left">
                     <strong>Summary:</strong>{" "}
                     {getSummary(meetingMinutesResponse)}
-                  </p>
-                  <p>
+                  </div>
+                </p>
+                <p>
+                  <div className="align-left">
                     <strong>Crucial Deadline:</strong>{" "}
                     {getDeadline(meetingMinutesResponse)}
-                  </p>
-                  <p>
-                    <strong>Follow-up actions:</strong>{" "}
+                  </div>
+                </p>
+                <div className="follow-up-actions align-left">
+                  <strong>Follow-up actions:</strong>
+                  <Markdown>
                     {getFollowUpActions(meetingMinutesResponse)}
-                  </p>
+                  </Markdown>{" "}
+                  {/* Render Markdown content */}
                 </div>
+              </div>
               )}
             </div>
           </div>
