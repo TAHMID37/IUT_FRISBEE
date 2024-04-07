@@ -1,9 +1,10 @@
-﻿# IUT_FRISBEE
+# IUT_FRISBEE
 
 
 Clone repository
 
-Create a Folder model , inside that copy your wisper model.
+Downlaod the model.zip file and extract it, copy the model folder in the project directory.
+[Team_IUT_FRISBEE_ONE_DRIVE](https://iutdhaka-my.sharepoint.com/:f:/g/personal/rafihassan_iut-dhaka_edu/EnaPmHUz0S9PidqCe60lp-EBFKEktdRZknUS70BmASLB4g?e=ysmI2f)
 
 Create a  .env file and fill it with same variables from env.txt and update the variables.
 
@@ -19,3 +20,4 @@ For frontend go to the 'client/meeting_minute-app/' directory and run `npm i`. A
 You have to install node.js before starting the app and install the following libraries:
 `npm install bootstrap`
 `npm install react-spinners`
+`npm install react-markdown`
